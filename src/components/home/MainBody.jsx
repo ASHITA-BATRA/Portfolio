@@ -2,6 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Typist from 'react-typist-component';
 import { Jumbotron } from "./migration";
+import Waveform from "./Waveform";
 
 const MainBody = React.forwardRef(
   ({ gradient, title, message, icons }, ref) => {
@@ -15,9 +16,10 @@ const MainBody = React.forwardRef(
         }}
         className="title bg-transparent bgstyle text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0"
       >
+        <Waveform/>
         <div id="stars"></div>
         <Container className="text-center">
-          <h1 ref={ref} className="display-1">
+          <h1 style={{zIndex:100,position:"relative"}} ref={ref} className="display-1">
             {title}
           </h1>
           <Typist>
