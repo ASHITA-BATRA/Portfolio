@@ -59,7 +59,7 @@ const Waveform = () => {
         position: "absolute",
         width: "100vw",
         left: 0,
-        top: windowWidth < 1000 ? "-16%" : "-14%", // Responsive top position
+        top: windowWidth < 1000 ? "-19%" : "-14%", // Responsive top position
         height: "100vh",
         display: "flex",
         alignItems: "center",
