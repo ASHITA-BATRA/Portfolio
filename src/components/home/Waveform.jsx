@@ -1,7 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const Waveform = () => {
   const waveRef = useRef(null);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const wave = waveRef.current;
@@ -12,16 +13,16 @@ const Waveform = () => {
       for (let i = 0; i < barCount; i++) {
         let bar = document.createElement("span");
         bar.style.height = `${Math.random() * 80 + 20}px`; // Random initial height
-        bar.style.width = "4px";
+        bar.style.width = "10%";
         bar.style.marginRight = "3px";
+        bar.style.paddingRight = "3px";
         bar.style.borderRadius = "3px";
         bar.style.background = "darkblue"; // Blue color with transparency
         bar.style.display = "inline-block";
         bar.style.transition = "height 0.2s ease-in-out";
         bar.style.position = "relative";
-        // bar.style.bottom = "50%"; 
-        bar.style.opacity = "0.1"
-        bar.style.transform = "translateY(30%)"; 
+        bar.style.opacity = "0.1";
+        bar.style.transform = "translateY(30%)";
         wave.appendChild(bar);
       }
     };
@@ -35,10 +36,11 @@ const Waveform = () => {
     };
 
     createWaveBars();
-    const interval = setInterval(animateWave, 400); // Update every 300ms
+    const interval = setInterval(animateWave, 400); // Update every 400ms
 
-    // Regenerate bars on window resize
+    // Track window resize
     const handleResize = () => {
+      setWindowWidth(window.innerWidth); // Update state
       barCount = Math.floor(window.innerWidth / 6);
       createWaveBars();
     };
@@ -56,9 +58,8 @@ const Waveform = () => {
       style={{
         position: "absolute",
         width: "100vw",
-        left:0,
-        top:"-14%",
-        // opacity:0.3,
+        left: 0,
+        top: windowWidth < 1000 ? "-16%" : "-14%", // Responsive top position
         height: "100vh",
         display: "flex",
         alignItems: "center",

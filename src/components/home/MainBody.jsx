@@ -23,11 +23,11 @@ const MainBody = React.forwardRef(
             {title}
           </h1>
           <Typist>
-            <div className="lead typist">
+            <div style={{zIndex:100,position:"relative"}}  className="lead typist">
               {message}
             </div>
           </Typist>
-          <div className="p-5">
+          <div  style={{zIndex:100,position:"relative"}}  className="p-5">
             {icons.map((icon, index) => (
               <a
                 key={`social-icon-${index}`}
@@ -45,6 +45,7 @@ const MainBody = React.forwardRef(
             href="#aboutme"
             role="button"
             aria-label="Learn more about me"
+            style={{zIndex:100,position:"relative"}}
           >
             More about me
           </a>
