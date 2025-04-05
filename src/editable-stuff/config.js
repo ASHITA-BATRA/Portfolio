@@ -9,7 +9,7 @@ const mainBody = {
   firstName: "Ashita",
   middleName: "",
   lastName: "Batra",
-  message: "The human voice is a complex and fascinating symphony, and our job is to unlock its secrets and make it accessible to all.",
+  message: "The human voice is a complex and fascinating symphony, and our job is to unlock its secrets and make it accessible to all",
   icons: [
     {
       image: "fa-github",
