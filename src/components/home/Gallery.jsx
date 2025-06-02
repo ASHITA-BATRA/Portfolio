@@ -15,12 +15,13 @@ import eight  from './gallery/8.jpeg'
 import nine  from './gallery/9.jpeg'
 import twelve  from './gallery/12.jpeg'
 import thirteen  from './gallery/13.jpeg'
+import forteen  from './gallery/14.jpeg'
 
 const bgStyle = { backgroundColor: "rgb(233, 236, 239)" };
 
 // Replace with actual image URLs
 const technicalImages = [
-     one,two,three,four,five,six,seven,eight,nine
+     one,two,three,four,five,six,seven,eight,nine,forteen
 ];
 
 const otherImages = [
