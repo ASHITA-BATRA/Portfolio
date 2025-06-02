@@ -74,6 +74,13 @@ const researchPapers = [
     conference: "EUSIPCO 2025",
     link: "",
     color:"#FFEFD5"
+  },
+    {
+    title: "Skin Patch based Age Detection using Machine Learning and Transfer Learning approach",
+    authors: "Ashita Batra, Himanshu Sharma, Nagendra Pratap Singh, Pradip K Das",
+    conference: "Submitted in International Journal of Imaging Systems and Technology",
+    link: "",
+    color:"#E3F2FD"
   }
 ];
 
