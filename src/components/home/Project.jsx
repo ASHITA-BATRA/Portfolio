@@ -71,7 +71,7 @@ const researchPapers = [
   {
     title: "Exploring Whisper Embeddings for Stutter Detection: A Layer-Wise Study",
     authors: "Ashita Batra, Brajesh Kar, Pradip K Das",
-    conference: "EUSIPCO 2025",
+    conference: "EUSIPCO 202",
     link: "",
     color:"#FFEFD5"
   }
