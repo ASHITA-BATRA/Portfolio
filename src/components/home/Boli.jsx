@@ -49,7 +49,7 @@ const Boli = ({ heading, message, link, imgSize, resume }) => {
         {/* </div> */}
         <div className={`col-lg-12`}>
           <h2 className="display-4 mb-5 text-center">About Project Boli</h2>
-          <p className="lead text-center">This research is dedicated to supporting individuals in India who stutter, with the first essential step being the collection of speech data. To this end, we have initiated a crowd-sourced data collection effort through a thoughtfully designed website, available at <a href="https://project-boli.vercel.app/" target="_blank">Project Boli</a>.</p>
+          <p className="lead text-center">This research is dedicated to supporting individuals in India who stutter, with the first essential step being the collection of speech data. To this end, we have initiated a crowd-sourced data collection effort through a thoughtfully designed website, available at <a href="https://project-boli-rouge.vercel.app/" target="_blank">Project Boli</a>.</p>
           {resume && (
             <p className="lead text-center">
               <a

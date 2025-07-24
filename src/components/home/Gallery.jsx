@@ -4,6 +4,7 @@ import Carousel from "react-bootstrap/Carousel";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 import { Jumbotron } from "./migration";
+import zero from './gallery/0.jpg';
 import one  from './gallery/1.jpeg'
 import two  from './gallery/2.jpeg'
 import three  from './gallery/3.jpeg'
@@ -21,7 +22,7 @@ const bgStyle = { backgroundColor: "rgb(233, 236, 239)" };
 
 // Replace with actual image URLs
 const technicalImages = [
-     one,two,three,four,five,six,seven,eight,nine,forteen
+     zero,one,two,three,four,five,six,seven,eight,nine,forteen
 ];
 
 const otherImages = [
